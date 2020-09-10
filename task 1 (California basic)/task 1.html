@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task 1</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            
+            .row::after{
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+            [class*="col-"] {
+                float: left;
+                padding: 18px;
+            }
+
+            header{
+                font-size: larger;
+                font-weight: bolder;
+                color: white;
+                background-color: cadetblue;
+                padding: 10px;
+                box-shadow: 8px 8px 8px grey;
+            }
+
+            .menu ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0; 
+            }
+
+            .menu li {
+                background-color: aqua;
+                padding: 12px;
+                margin-bottom: 10px;
+                color: white;
+                font-size: larger;
+                box-shadow: 5px 5px 5px grey;
+            }
+
+            .menu li:hover {
+                background-color: teal;
+            }
+
+            .content {
+                text-align: center;
+            }
+
+            aside {
+                float: right;
+                margin-top: 15px;
+            }
+
+            footer {
+                background-color: silver;
+                text-align: center;
+                padding: 15px;
+                margin-top: 50px;
+                color: rgb(70, 64, 64);
+            }
+
+            .content p::first-letter{
+                font-weight: bolder;
+                font-size: 2vw;
+            }
+
+            /* Mobile phones */
+            [class*="col-"] {
+                width: 100%;
+            }
+
+            /* Tablets */
+            @media only screen and (min-width: 600px) {
+
+                .col-t-1 {width: 8.33%;}
+
+                .col-t-2 {width: 16.66%;}
+
+                .col-t-3 {width: 25%;}
+
+                .col-t-4 {width: 33.33%;}
+
+                .col-t-5 {width: 41.66%;}
+
+                .col-t-6 {width: 50%;}
+
+                .col-t-7 {width: 58.33%;}
+
+                .col-t-8 {width: 66.66%;}
+
+                .col-t-9 {width: 75%;}
+
+                .col-t-10 {width: 83.33%;}
+
+                .col-t-11 {width: 91.66%;}
+
+                .col-t-12 {width: 100%;}
+            }
+
+            /* Laptops, Desktop comps */
+            @media only screen and (min-width: 992px) {
+
+                .col-1 {width: 8.33%;}
+
+                .col-2 {width: 16.66%;}
+
+                .col-3 {width: 25%;}
+
+                .col-4 {width: 33.33%;}
+
+                .col-5 {width: 41.66%;}
+
+                .col-6 {width: 50%;}
+
+                .col-7 {width: 58.33%;}
+
+                .col-8 {width: 66.66%;}
+
+                .col-9 {width: 75%;}
+
+                .col-10 {width: 83.33%;}
+
+                .col-11 {width: 91.66%;}
+
+                .col-12 {width: 100%;}
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>California</h1>
+        </header>
+
+        <div class="row">
+            <div class="menu col-t-4 col-3">
+                <ul>
+                    <li>History</li>
+                    <li>Geography</li>
+                    <li>Demographics</li>
+                    <li>Culture</li>
+                </ul>
+            </div>
+
+            <div class="content col-t-8 col-6">
+                <h2>California Republic</h2>
+                    <p>California is a state in the Pacific Region of the United States. With 39.5 million residents across a total area of about 163,696
+                        square miles (423,970 km2), California is the most populous U.S. state and the third-largest by area. The state capital is Sacramento. The Greater Los Angeles
+                         Area and the San Francisco Bay Area are the nation's second- and fifth-most populous urban regions, with 18.7 million and 9.7 million residents respectively.
+                          Los Angeles is California's most populous city, and the country's second-most populous, after New York City. California also has the nation's most populous county,
+                           Los Angeles County, and its largest county by area, San Bernardino County. The City and County of San Francisco is both the country's second most densely populated
+                            major city after New York City and the fifth most densely populated county, behind only four of the five New York City boroughs.</p>
+            </div>
+
+            <aside class="col-t-12 col-3">
+                <figure>
+                    <img style="max-width: 100%;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Flag_of_California.svg/250px-Flag_of_California.svg.png" alt="Bear Flag">
+                    <figcaption style="text-align: center;"><a href="#">California Flag</a></figcaption>
+                    <p>
+                        The Bear Flag is the official flag of the U.S. state of California. The precursor of the flag was first flown during the 1846 Bear Flag Revolt and was also known as the Bear Flag.
+                    </p>
+                </figure>
+            </aside>
+        </div>
+
+        <footer>
+            <p>Copyright &copy; 2020.</p>
+        </footer>
+    </body>
+</html>
